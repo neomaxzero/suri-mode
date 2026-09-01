@@ -1,0 +1,6 @@
+interface:
+  display_name: "Suri Mode"
+  short_description: "Orquesta trabajo pequeño y verificable"
+  default_prompt: "Usa $suri-mode para resolver esta tarea con el flujo adecuado."
+policy:
+  allow_implicit_invocation: true
