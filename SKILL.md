@@ -58,6 +58,7 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Refactoring, sizing a diff, adding an abstraction, or threading a decision through several layers. Use `principle-maintainer-effort` to reduce the future maintenance burden without weakening correctness or legitimate boundaries.
 - Architecture choices or reviews that cross layers, change ownership or shared contracts, introduce shared abstractions, or affect stable execution boundaries such as persistence, synchronization, or offline behavior. Use `architecture-fit` before implementation.
 - New visually significant interface. Use `frontend-skill`.
 - Web application behavior or browser UI changes. Use `playwright` and verify visually.

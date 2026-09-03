@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle: Maintainer Effort"
+  short_description: "Reduce code and coordination burden"
+  default_prompt: "Use $principle-maintainer-effort to find the smallest maintainable solution for this change."
+policy:
+  allow_implicit_invocation: true
