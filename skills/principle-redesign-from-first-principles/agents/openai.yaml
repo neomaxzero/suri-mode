@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle: Explicit Redesign"
+  short_description: "Evaluate explicitly requested redesigns only"
+  default_prompt: "Use $principle-redesign-from-first-principles to compare a bounded redesign against the existing design using confirmed current requirements."
+policy:
+  allow_implicit_invocation: false

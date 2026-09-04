@@ -58,6 +58,7 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Only when the user explicitly requests a redesign or explicitly invokes it for design review, read [principle-redesign-from-first-principles](skills/principle-redesign-from-first-principles/SKILL.md). Do not activate it for bugs, small features, or local refactors; propose any structural scope expansion separately and wait for approval.
 - Planning verification or declaring a task complete. Read [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md) to define observable success and match completion claims to direct evidence.
 - Debugging or root-cause diagnosis. Read [principle-prove-the-cause](skills/principle-prove-the-cause/SKILL.md); obtain human approval before correction when material uncertainty remains or impact is high.
 - Stateful logic, repeated shape assumptions, or domain rules scattered across conditionals. Read [principle-model-the-domain](skills/principle-model-the-domain/SKILL.md) to choose a fitting representation without forcing an abstraction.
