@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle: Model the Domain"
+  short_description: "Encode domain rules in fitting data structures"
+  default_prompt: "Use $principle-model-the-domain to choose a clear representation for this behavior without forcing an abstraction."
+policy:
+  allow_implicit_invocation: true
