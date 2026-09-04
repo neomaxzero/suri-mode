@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle: Prove the Cause"
+  short_description: "Test causal explanations before correcting defects"
+  default_prompt: "Use $principle-prove-the-cause to investigate this defect and distinguish evidence from hypotheses before proposing a correction."
+policy:
+  allow_implicit_invocation: true

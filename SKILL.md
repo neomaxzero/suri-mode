@@ -58,6 +58,7 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Debugging or root-cause diagnosis. Read [principle-prove-the-cause](skills/principle-prove-the-cause/SKILL.md); obtain human approval before correction when material uncertainty remains or impact is high.
 - Stateful logic, repeated shape assumptions, or domain rules scattered across conditionals. Read [principle-model-the-domain](skills/principle-model-the-domain/SKILL.md) to choose a fitting representation without forcing an abstraction.
 - Foundational data shapes, shared-state ownership, or prerequisite sequencing that could become costly to revise. Read [principle-preserve-options](skills/principle-preserve-options/SKILL.md) before building dependent logic.
 - Refactoring, sizing a diff, adding an abstraction, or threading a decision through several layers. Use `principle-maintainer-effort` to reduce the future maintenance burden without weakening correctness or legitimate boundaries.

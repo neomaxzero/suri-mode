@@ -18,13 +18,8 @@ Do not edit code in this route unless the user also asks for a change.
 
 ## Bug fix
 
-1. Reproduce the reported behavior before editing when possible.
-2. Distinguish the visible symptom from the root cause. Trace the cause with runtime or source evidence.
-3. Check at least one alternate explanation when the diagnosis is not direct.
-4. Add or extend tests only for important regressions, core user journeys, security, permissions, payments, data loss, or behavior that is otherwise difficult to verify.
-5. Implement the smallest root-cause correction. Avoid guards and compatibility code that merely hide the symptom.
-6. Repeat the original reproduction and inspect nearby regressions.
-7. Remove unnecessary defenses, branches, comments, or abstractions introduced during the fix.
+1. Read and follow [Prove the Cause](../skills/principle-prove-the-cause/SKILL.md) for diagnosis, approval gates, correction, and causal verification.
+2. Add or extend tests only for important regressions, core user journeys, security, permissions, payments, data loss, or behavior that is otherwise difficult to verify. Tests supplement the causal evidence; passing tests do not establish the diagnosis.
 
 ## Feature
 
