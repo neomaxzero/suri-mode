@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle: Preserve Options"
+  short_description: "Resolve costly structural decisions early"
+  default_prompt: "Use $principle-preserve-options to identify the necessary foundations and reversible choices for this change."
+policy:
+  allow_implicit_invocation: true
