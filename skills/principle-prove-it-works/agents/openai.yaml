@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle: Prove It Works"
+  short_description: "Match completion claims to direct evidence"
+  default_prompt: "Use $principle-prove-it-works to define success, verify the actual result, and report what remains unverified."
+policy:
+  allow_implicit_invocation: true

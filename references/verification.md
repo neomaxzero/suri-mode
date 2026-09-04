@@ -1,13 +1,10 @@
 # Proportional verification
 
-Verify the real outcome. Compilation alone is not proof.
+Read [Prove It Works](../skills/principle-prove-it-works/SKILL.md) before implementation to define success, then apply it before declaring completion. It owns the general evidence standard; the sections below cover specific verification surfaces.
 
 ## Every change
 
-- Use the repository's existing checks where relevant.
-- Exercise the changed behavior through its real surface.
 - Inspect the final diff for unrelated changes and unnecessary code.
-- Match verification depth to user impact and failure risk.
 
 ## Web features and UI
 
