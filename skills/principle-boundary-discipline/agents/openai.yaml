@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle: Boundary Discipline"
+  short_description: "Place checks where their guarantees are valid"
+  default_prompt: "Use $principle-boundary-discipline to identify trust boundaries and preserve necessary validation while avoiding redundant checks."
+policy:
+  allow_implicit_invocation: true
