@@ -11,6 +11,7 @@ Choose the correct solution that leaves the least code and coordination burden f
 
 - State the observable result before choosing a structure.
 - Look for deletion, consolidation, or reuse before adding a new path.
+- Remove existing code before construction only when its removal is necessary for the agreed change and required behavior can be verified as preserved. Absence of visible usages alone does not prove that code or validation is unnecessary; do not turn a small task into unrelated cleanup.
 - Trace where each affected decision is made and consumed.
 - Treat a path through three or more layers as a review signal, not an automatic failure.
 - When a value must cross several layers, check whether the decision belongs closer to its consumer.
