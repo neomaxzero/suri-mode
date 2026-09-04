@@ -22,6 +22,14 @@ Choose the correct solution that leaves the least code and coordination burden f
 
 Do not flatten boundaries that isolate external systems, ownership, security, persistence, or genuinely reusable behavior. A rich interface that hides substantial work can be simpler to maintain than exposing its internals.
 
+## Evaluate human reader load
+
+Use a competent developer who knows the language but is new to the module as the reference reader. Do not use reading-time thresholds, estimated intelligence, or the AI's ability to trace code as evidence of human comprehension.
+
+- Inspect both indirection and the hidden or mutable state a reader must remember. Identify where a value comes from, who can change it, which invariants apply, and what files or unstated knowledge are needed to understand the affected behavior.
+- Keep mutable state in the smallest scope that supports its required lifetime and ownership. Prefer derived values over synchronized copies when this preserves required behavior and performance.
+- Report concrete comprehension obstacles, not claims about measured human readability unless an actual human evaluation occurred. These observations do not authorize refactors outside the agreed scope.
+
 ## Review before finishing
 
 Remove avoidable pass-through wrappers, duplicated decisions, temporary compatibility paths, and representation leaks introduced by the change. Confirm that a future maintainer can locate the decision and understand its path without reconstructing unrelated layers.
