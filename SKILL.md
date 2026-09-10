@@ -34,6 +34,10 @@ For any code change, also read [verification](references/verification.md). For a
 
 ## Important decisions
 
+Resolve local implementation choices when intent, scope, and acceptance criteria are clear. Reversibility alone does not authorize a change. If missing information could materially change the intended behavior, scope, or acceptance criteria, ask a focused question before implementing the affected part.
+
+While waiting for an answer, continue independent, authorized work that does not depend on that answer or cross an active checkpoint. Report newly discovered out-of-scope problems; do not silently fix them.
+
 Pause in daytime mode when a choice:
 
 - changes visible behavior;
