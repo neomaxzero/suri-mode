@@ -58,6 +58,7 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Changing types, function signatures, or variants. Read [principle-type-system-discipline](skills/principle-type-system-discipline/SKILL.md) to prevent concrete mistakes without project-wide type hardening.
 - Changing validation, error handling, or data conversion across trust boundaries. Read [principle-boundary-discipline](skills/principle-boundary-discipline/SKILL.md) to locate guarantees and preserve necessary business and runtime checks.
 - Only when the user explicitly requests a redesign or explicitly invokes it for design review, read [principle-redesign-from-first-principles](skills/principle-redesign-from-first-principles/SKILL.md). Do not activate it for bugs, small features, or local refactors; propose any structural scope expansion separately and wait for approval.
 - Planning verification or declaring a task complete. Read [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md) to define observable success and match completion claims to direct evidence.

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle: Type System Discipline"
+  short_description: "Use types to prevent concrete mistakes"
+  default_prompt: "Use $principle-type-system-discipline to strengthen the types involved in this change without unnecessary wrappers or broader refactoring."
+policy:
+  allow_implicit_invocation: true
