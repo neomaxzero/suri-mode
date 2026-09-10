@@ -62,6 +62,8 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Repetitive edits, migrations, or checks where tooling may reduce errors or verification effort. Read [principle-build-the-lever](skills/principle-build-the-lever/SKILL.md) to compare existing tools, narrow automation, and direct execution.
+
 - Concurrent writers affecting the same mutable state. Read [principle-separate-before-serializing-shared-state](skills/principle-separate-before-serializing-shared-state/SKILL.md) to distinguish independent ownership from shared invariants and prevent lost updates.
 
 - Commands or processing flows with concrete retry, duplicate-delivery, concurrency, or partial-execution risks. Read [principle-make-operations-idempotent](skills/principle-make-operations-idempotent/SKILL.md) to prevent duplicate effects and reconcile uncertain outcomes without broad hardening.
