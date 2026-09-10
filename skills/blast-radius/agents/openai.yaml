@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blast Radius"
+  short_description: "Check indirect breakage beyond the edited files"
+  default_prompt: "Use $blast-radius to assess this change and verify the assumptions protecting its downstream consumers."
