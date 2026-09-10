@@ -47,6 +47,8 @@ Sleep Mode may not:
 
 ## Execution loop
 
+Read [Sequence Verifiable Units](../skills/principle-sequence-verifiable-units/SKILL.md) before planning units. Enforce its autonomous size limits on local commits and planned delivery groups; this does not authorize opening PRs.
+
 1. Record the baseline and success predicate.
 2. Work in small, independently verifiable units.
 3. Verify each unit before continuing.

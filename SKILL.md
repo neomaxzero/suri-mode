@@ -62,6 +62,8 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Sequencing multi-step code changes or sizing commits and PRs for review. Read [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md) for coherent verification boundaries and mode-dependent review-size limits.
+
 - Planned rewrites or migrations with identified consumers and explicit verification boundaries. Read [principle-outcome-oriented-execution](skills/principle-outcome-oriented-execution/SKILL.md) to complete the replacement and require concrete reasons for backward compatibility.
 
 - Changing types, function signatures, or variants. Read [principle-type-system-discipline](skills/principle-type-system-discipline/SKILL.md) to prevent concrete mistakes without project-wide type hardening.

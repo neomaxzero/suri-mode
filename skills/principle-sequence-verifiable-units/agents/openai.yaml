@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sequence Verifiable Units"
+  short_description: "Size coherent changes for verification and review"
+  default_prompt: "Use $principle-sequence-verifiable-units to divide this work into coherent, verifiable changes sized for review."
