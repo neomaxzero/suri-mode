@@ -12,6 +12,7 @@ Route the task. Keep the change small. Challenge important conclusions. Verify t
 - Prefer several fast, focused iterations over one large speculative pass.
 - Minimize new code, concepts, dependencies, and compatibility layers.
 - Investigate at least two credible options only when a real design decision exists. Compare technical debt, code surface, reversibility, repository fit, and expected impact.
+- Start with a brief comparison and reuse established patterns when they fit. Build a sketch, prototype, or focused technical probe only when it can resolve a concrete uncertainty that the comparison cannot. Do not manufacture alternatives for clear bug fixes, mechanical changes, or a single viable approach. Do not delegate exploration by default; stop exploring when evidence is sufficient to decide, and preserve human approval for unresolved product preferences or scope changes.
 - Investigate ambiguity before asking. Ask with evidence when the answer is a product preference or an important decision that observation cannot settle.
 - Pause during normal daytime work only for an important decision.
 - Be explicit about uncertainty and environmental limits. Never imply evidence, elapsed work, access, or verification that did not occur.
