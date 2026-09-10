@@ -1,0 +1,4 @@
+interface:
+  display_name: "Outcome-Oriented Execution"
+  short_description: "Complete migrations without speculative compatibility"
+  default_prompt: "Use $principle-outcome-oriented-execution to complete the agreed migration and justify any retained compatibility."
