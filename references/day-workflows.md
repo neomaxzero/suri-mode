@@ -20,6 +20,9 @@ Do not edit code in this route unless the user also asks for a change.
 
 1. Read and follow [Prove the Cause](../skills/principle-prove-the-cause/SKILL.md) for diagnosis, approval gates, correction, and causal verification.
 2. Add or extend tests only for important regressions, core user journeys, security, permissions, payments, data loss, or behavior that is otherwise difficult to verify. Tests supplement the causal evidence; passing tests do not establish the diagnosis.
+3. When a regression test offers useful protection, express observable behavior using an appropriate existing component or integration test path. Confirm it fails for the intended reason before correction, then passes after the fix. Respect the diagnostic approval gate before changing production behavior.
+4. Avoid trivial assertions, tests of internal call sequences, excessive mocks, or new infrastructure that costs more than the protection warrants. If an automated regression test is impractical, use a reproducible behavior check and explain the limitation; do not claim failing-before evidence that was not observed.
+5. Preserve assertions for required behavior. Do not weaken them to accommodate an incorrect implementation. Run relevant nearby checks proportionately after correction.
 
 ## Feature
 
