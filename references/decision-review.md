@@ -14,7 +14,7 @@ Use this review internally for important decisions and before declaring substant
 
 ## Independent critic
 
-When native delegation and `gpt-5.6-luna` are available, run one critic with high reasoning. Give it the task, evidence, diff or proposed decision, and verification performed. Ask for contradictions and the smallest corrective action. The critic does not edit files.
+Routine completion does not require a separate critic. When material uncertainty or high impact makes an independent challenge useful, follow the token-efficient model policy in [Suri Mode](../SKILL.md). Start with a lightweight model and low reasoning; increase depth only when the specific question requires it. Give the critic the bounded question, relevant evidence, diff or proposed decision, and verification performed. Ask for concise contradictions and the smallest corrective action. The critic does not edit files.
 
 Treat the output as a challenge, not authority. Check every accepted finding against the artifact. Keep the review internal unless uncertainty materially affects the user.
 

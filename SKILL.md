@@ -85,11 +85,19 @@ Do not route to `karpathy-guidelines`, `human-gated-implementation`, `image-to-c
 
 ## Model use
 
-- Keep the parent execution model. The user's normal preference is `gpt-5.6-sol` with low reasoning.
-- For an important decision and before declaring substantial work complete, use one native Codex subagent on `gpt-5.6-luna` with high reasoning for an independent internal challenge when that model and delegation are available.
-- Give the critic the evidence and proposed conclusion. Ask it to find contradictions, unsupported claims, alternate explanations, unnecessary code, and missing verification.
-- Do not expose the critic transcript. Incorporate valid corrections into the work.
-- If the model or delegation is unavailable, perform the same challenge locally and do not seek an API-backed substitute.
+- Keep the parent execution model; this policy governs subagents, not automatic switching of the user's model.
+- For routine software subtasks, prioritize total token efficiency over depth of analysis. Default to an available lightweight native model such as `gpt-5.6-luna` with low reasoning. Use `gpt-5.6-terra` or `gpt-5.6-sol` with low reasoning when the bounded task needs more capability.
+- Delegate only when useful independent work justifies the context and coordination cost. Handle small tasks directly. Give each subagent a narrow objective, only necessary context, and a request for concise findings with evidence and unresolved issues.
+- Increase model capability or reasoning depth only for a concrete difficulty, material uncertainty, high impact, or an insufficient result. Avoid repeated low-value retries. Do not request exhaustive analysis or additional reviewers for routine work.
+- Substantial completion alone does not require a critic. Use an independent challenge when unresolved uncertainty or impact warrants it; follow [decision review](references/decision-review.md). Preserve necessary verification and diagnostic approval gates regardless of model choice.
+- Use only models and reasoning levels available in the current native tools. If delegation is unavailable, work locally; never use an API-backed substitute. Do not claim token savings without usage evidence.
+
+## Context efficiency
+
+- Search before loading large files or logs. Read relevant sections and expand when evidence is insufficient; read required skill instructions fully.
+- Avoid repeated reads of unchanged material and raw output that will not inform a decision. Keep bulky evidence retrievable and return concise findings with source locations, rather than copying it into every agent's context.
+- For long work, preserve the objective, scope, user authorizations, decisions, evidence locations, uncertainty, and next action in the existing task record when needed for continuity. Do not create a record for every small task.
+- Treat summaries as navigation aids, not substitutes for checking the original evidence. Do not impose arbitrary token or turn limits that leave authorized work incomplete.
 
 ## Progress and replies
 
