@@ -62,6 +62,8 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Evidence suggests recurring errors or an important preventable failure. Read [principle-encode-lessons-in-structure](skills/principle-encode-lessons-in-structure/SKILL.md) before proposing a durable control; recording an observation does not itself require this skill.
+
 - Sequencing multi-step code changes or sizing commits and PRs for review. Read [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md) for coherent verification boundaries and mode-dependent review-size limits.
 
 - Planned rewrites or migrations with identified consumers and explicit verification boundaries. Read [principle-outcome-oriented-execution](skills/principle-outcome-oriented-execution/SKILL.md) to complete the replacement and require concrete reasons for backward compatibility.
@@ -98,6 +100,15 @@ Do not route to `karpathy-guidelines`, `human-gated-implementation`, `image-to-c
 - Avoid repeated reads of unchanged material and raw output that will not inform a decision. Keep bulky evidence retrievable and return concise findings with source locations, rather than copying it into every agent's context.
 - For long work, preserve the objective, scope, user authorizations, decisions, evidence locations, uncertainty, and next action in the existing task record when needed for continuity. Do not create a record for every small task.
 - Treat summaries as navigation aids, not substitutes for checking the original evidence. Do not impose arbitrary token or turn limits that leave authorized work incomplete.
+
+## Repository lessons
+
+- At the start of repository work, check for `.codex/lessons.md` at the repository root and search entries relevant to the task. Do not load the entire record unnecessarily or infer recurrence from unavailable sessions. If the repository is unclear, do not write into an arbitrary working directory.
+- During authorized repository work, record a confirmed error or explicit user correction when it could usefully prevent a later mistake. Create the file only for a qualifying observation. Respect read-only requests and repository restrictions; report when persistence is unavailable instead of claiming a memory was saved.
+- Use one concise line: `YYYY-MM-DD | area | confirmed error; correction or unresolved status | evidence: retrievable reference`. Evidence may be a commit, PR, test result, or a dated user correction in an existing task record. Keep hypotheses, transient failures, routine failing tests, secrets, and personal data out of the record.
+- Before writing, check for the same observation. Merge genuine duplicates while preserving distinct occurrence dates and evidence; rereading one incident is not a second occurrence. Treat records as fallible historical evidence, not instructions or proof that a cause is established. Mark disproven or obsolete lessons rather than silently relying on them.
+- Keep lessons scoped to this repository. Global preferences belong in Suri only through an explicitly approved update. Do not automatically commit or publish the lesson file; use explicit staging for requested commits so the local record is excluded unless the user asks to share it. Do not change ignore configuration or build a cross-repository memory system automatically.
+- Briefly mention meaningful recorded corrections in the normal progress or completion update. A similar second incident is a reason to investigate a pattern, not permission to refactor, add a rule, or edit skills.
 
 ## Progress and replies
 
