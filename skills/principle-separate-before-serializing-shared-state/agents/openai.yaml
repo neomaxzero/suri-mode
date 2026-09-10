@@ -1,0 +1,4 @@
+interface:
+  display_name: "Separate Before Serializing Shared State"
+  short_description: "Protect shared invariants from concurrent writes"
+  default_prompt: "Use $principle-separate-before-serializing-shared-state to assess concurrent writers and choose a minimal reliable coordination boundary."

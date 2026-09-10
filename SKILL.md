@@ -62,6 +62,8 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Concurrent writers affecting the same mutable state. Read [principle-separate-before-serializing-shared-state](skills/principle-separate-before-serializing-shared-state/SKILL.md) to distinguish independent ownership from shared invariants and prevent lost updates.
+
 - Commands or processing flows with concrete retry, duplicate-delivery, concurrency, or partial-execution risks. Read [principle-make-operations-idempotent](skills/principle-make-operations-idempotent/SKILL.md) to prevent duplicate effects and reconcile uncertain outcomes without broad hardening.
 
 - Evidence suggests recurring errors or an important preventable failure. Read [principle-encode-lessons-in-structure](skills/principle-encode-lessons-in-structure/SKILL.md) before proposing a durable control; recording an observation does not itself require this skill.
