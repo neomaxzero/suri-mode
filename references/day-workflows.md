@@ -31,6 +31,14 @@ Do not edit code in this route unless the user also asks for a change.
 6. Verify the behavior through the real user surface.
 7. Review the diff for avoidable code, concepts, dependencies, and future obligations. Remove what does not earn its place.
 
+### Experience within scope
+
+- Prioritize completing the user's core task clearly and reliably. For libraries or internal APIs, consider the consuming developer's experience as well.
+- For affected UI flows, provide clear feedback for actions, waiting, errors, and results. Preserve user input on failure when appropriate; avoid redundant messages that obscure the next action.
+- Cover relevant accessibility needs and non-ideal states in the changed flow. Reuse established interface patterns rather than introducing a new visual language.
+- Add controls, animation, or prototypes only for a concrete benefit or unresolved question. Keep polish and verification proportional to the requested change; do not turn a small feature into an interface-wide redesign.
+- Propose scope reductions or additions when they would improve the outcome, and wait for approval before changing the agreed scope. Experience quality does not override correctness or user decisions.
+
 ## Refactor
 
 1. State the concrete reason and the behavior that must remain unchanged.
