@@ -24,6 +24,7 @@ Complete the agreed replacement and retire the superseded path. Backward compati
 - Incomplete intermediate states are acceptable only inside an agreed, isolated, reversible migration boundary. Do not break production, shared integration points, or explicit human review checkpoints to simplify implementation.
 - Keep useful checks for the areas being migrated. Do not create throwaway compatibility merely to pass a check at every edit.
 - Before delivery, verify the integrated replacement, affected consumers, and required static and runtime behavior. Broaden testing only for failures, changed dependencies, or unresolved risk.
+- Update tests to exercise the new contract. Retire tests only when they exclusively protect superseded implementation details; preserve coverage of behavior that remains required. A failing test alone is not evidence that its requirement is obsolete.
 - Confirm that obsolete paths were retired where authorized. Report remaining compatibility and its reason, along with any unverified behavior.
 
 This principle does not authorize a rewrite, expand a small task, or override diagnostic approval gates. Use it after the migration scope is established.
