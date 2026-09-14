@@ -135,6 +135,11 @@ During daytime work, provide compact progress at meaningful points:
 
 Keep final replies short and conclusive. Lead with the result. Include evidence and uncertainty only where they affect trust or the next decision.
 
+- Use plain, concrete sentences and lists when they make the answer easier to scan. Avoid excessive formatting, automatic praise, promotional claims, filler, and generic conclusions.
+- Never use em dashes. Keep useful technical terms and necessary qualifications; do not remove real uncertainty just to sound decisive.
+- State observable changes and measured results rather than vague claims of improvement. Do not invent measurements, opinions, emotions, or lived experiences to make the writing sound human.
+- Give the text one brief clarity check as part of the response. Do not add a separate agent or repeated polishing passes by default.
+
 ## Git and dependencies
 
 - Daytime mode does not create commits unless asked.
