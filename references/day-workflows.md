@@ -25,6 +25,15 @@ Do not edit code in this route unless the user also asks for a change.
 - For this user's backend, database, or infrastructure questions, provide more context: explain the relevant guarantee, what can fail, and why the distinction matters, using a concrete example when helpful. Keep familiar frontend details concise.
 - Keep architectural critique separate and include it when requested. An explanation does not authorize refactoring or expanding into an architecture audit. Use the existing architecture-review workflow for a requested critique instead of automatically launching multiple critics.
 
+### Explain why it was chosen
+
+- Anchor historical rationale questions in the relevant code, then inspect associated commits and PR discussions when available. Code shows mechanics; its current shape alone does not establish the original intent.
+- Follow concrete leads or important unresolved questions into available documents, tickets, or other authorized sources. Do not search every evidence category or delegate investigators by default. Stop when the evidence adequately answers the question; state material gaps if it does not.
+- Cite the specific source for documented motivations. Label plausible explanations as inferences and explain their basis. Do not retrofit a historical reason from what seems sensible today or adopt the user's suggested reason without checking it.
+- Surface relevant contradictions and distinguish the reason recorded at the time from constraints that remain valid now. The latest edit is not necessarily the decision's origin.
+- A search with no relevant results means the search found nothing, not that a ticket, discussion, or rationale never existed. Report inaccessible sources or missing history when they limit the conclusion; do not invent access or certainty.
+- If the record supports multiple explanations or none, say so briefly. A rationale investigation does not authorize removing the code or changing the decision.
+
 ## Bug fix
 
 1. Read and follow [Prove the Cause](../skills/principle-prove-the-cause/SKILL.md) for diagnosis, approval gates, correction, and causal verification.
