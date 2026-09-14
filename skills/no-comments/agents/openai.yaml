@@ -1,0 +1,4 @@
+interface:
+  display_name: "No Comments"
+  short_description: "Keep rationale in history, not explanatory comments"
+  default_prompt: "Use $no-comments for this scoped change, preserving useful rationale in authorized commit or PR history and retaining functional directives."
