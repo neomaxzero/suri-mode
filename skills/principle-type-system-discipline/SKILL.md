@@ -25,6 +25,14 @@ Use the language's type system to prevent relevant mistakes in the current chang
 
 Reuse authoritative types and the repository's existing schema or generation workflow where suitable. Avoid parallel definitions that can drift. Do not add generators, packages, or change public contracts without the required approval.
 
+## TypeScript specifics
+
+- Prefer `unknown` over `any` for data whose shape is not established. Narrow or validate it at the appropriate boundary before use; do not turn this into a repository-wide replacement of existing types.
+- Use `satisfies` when the goal is to check that an expression conforms to a type without asserting a conversion. It is a compile-time check, not runtime validation. Keep necessary casts localized and justified under the static-guarantee rules above.
+- A user-defined type guard must actually establish the predicate it declares. Check the relevant properties rather than trusting the guard's name or return annotation.
+- Derive types with existing declarations and utilities such as `Pick`, `Omit`, or `ReturnType` when that preserves domain meaning and avoids drift. Keep an explicit domain type when derivation would couple unrelated contracts or obscure intent.
+- Use an argument object when positional arguments create a concrete ordering or meaning ambiguity. Preserve clear existing signatures rather than converting every function mechanically.
+
 ## Verify the bounded change
 
 Run the relevant compiler or type checks and exercise affected runtime behavior when applicable. For a claimed static guarantee, verify that the compiler rejects a representative invalid use when practical. Compilation does not prove external data is valid or the business outcome is correct.
