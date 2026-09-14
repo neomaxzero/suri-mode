@@ -47,6 +47,8 @@ Sleep Mode may not:
 
 ## Execution loop
 
+Maintain a concise [decision trail](decision-trail.md) in the existing task record for important decisions, pivots, blockers, and verification results. Keep it local unless sharing is explicitly authorized; no separate model review is required just for the trail.
+
 Read [Sequence Verifiable Units](../skills/principle-sequence-verifiable-units/SKILL.md) before planning units. Enforce its autonomous size limits on local commits and planned delivery groups; this does not authorize opening PRs.
 
 1. Record the baseline and success predicate.
