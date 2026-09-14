@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Verification Skill"
+  short_description: "Capture a reusable verification flow for a repository"
+  default_prompt: "Use $create-verification-skill to document and validate one important recurring verification flow in this repository."
