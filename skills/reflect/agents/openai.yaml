@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reflect"
+  short_description: "Propose evidence-backed improvements on request"
+  default_prompt: "Use $reflect to review this task and propose a few concrete improvements without applying changes or creating tickets."
+policy:
+  allow_implicit_invocation: false

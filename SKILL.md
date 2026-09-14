@@ -63,6 +63,8 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Only for an explicitly requested retrospective or invocation, read [reflect](skills/reflect/SKILL.md) to propose evidence-backed workflow improvements. Do not activate it automatically after corrections or completion, and do not apply proposals or file tickets without authorization.
+
 - Authoring code comments or performing an explicit comment cleanup. Read [no-comments](skills/no-comments/SKILL.md) to avoid explanatory comments and preserve useful rationale in authorized commit or PR history without removing functional or legal content.
 
 - Existing repository verification guidance affected by concrete changes or an explicit maintenance request. Read [maintain-verification-skill](skills/maintain-verification-skill/SKILL.md) to update and exercise the relevant flows without a default full audit.
