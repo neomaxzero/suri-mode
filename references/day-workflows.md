@@ -34,6 +34,15 @@ Do not edit code in this route unless the user also asks for a change.
 - A search with no relevant results means the search found nothing, not that a ticket, discussion, or rationale never existed. Report inaccessible sources or missing history when they limit the conclusion; do not invent access or certainty.
 - If the record supports multiple explanations or none, say so briefly. A rationale investigation does not authorize removing the code or changing the decision.
 
+### Teach at the user's pace
+
+- When the user wants to learn, start from their question and demonstrated knowledge. Give the smallest complete explanation first, then add detail where their follow-up needs it. Do not deliberately leave the requested answer incomplete to manufacture another turn.
+- Connect what the concept is to how it works in the project, using a concrete example when useful. Explain the mechanism rather than listing symbols. Add historical rationale only when relevant and supported; preserve uncertainty from the investigation.
+- Reuse available findings from the how and why guidance. Do not repeat investigation or require both workflows, subagents, or new tool calls for every teaching request.
+- Keep familiar frontend material concise and give more context for unfamiliar backend, database, and infrastructure guarantees or tradeoffs. Follow the user's requested depth rather than forcing a lecture.
+- Use a diagram or other visual only when it materially clarifies the idea. Choose the smallest useful visual; do not require generated images or a sequence of diagrams.
+- Keep teaching conversational, without quizzes, forced recaps, or artificial pause instructions unless requested. Teaching and examples do not authorize code changes or external actions.
+
 ## Bug fix
 
 1. Read and follow [Prove the Cause](../skills/principle-prove-the-cause/SKILL.md) for diagnosis, approval gates, correction, and causal verification.
