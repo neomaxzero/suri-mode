@@ -111,6 +111,8 @@ Do not route to `karpathy-guidelines`, `human-gated-implementation`, `image-to-c
 
 ## Context efficiency
 
+- When resuming prior work or answering where it stands, follow [resume context](references/resume-context.md): use available summaries and existing task records first, then investigate only material gaps.
+
 - Search before loading large files or logs. Read relevant sections and expand when evidence is insufficient; read required skill instructions fully.
 - Avoid repeated reads of unchanged material and raw output that will not inform a decision. Keep bulky evidence retrievable and return concise findings with source locations, rather than copying it into every agent's context.
 - For long work, preserve the objective, scope, user authorizations, decisions, evidence locations, uncertainty, and next action in the existing task record when needed for continuity. Follow [decision trail](references/decision-trail.md) for long-running or autonomous work that needs review after the fact; do not create a record for every small task.
