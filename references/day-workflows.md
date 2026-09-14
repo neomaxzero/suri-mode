@@ -16,6 +16,15 @@ Use for technical research and questions about code.
 
 Do not edit code in this route unless the user also asks for a change.
 
+### Explain how it works
+
+- For code walkthroughs, trace the relevant entry point through decisions, data changes, and observable output. Read the actual implementation rather than inferring behavior from names. Keep the explanation scoped to the question.
+- Investigate and explain directly by default. Delegate only when independent exploration earns its context and coordination cost, following Suri's model policy; do not require a separate explainer agent.
+- Lead with the main behavior, then explain only the concepts, source locations, and non-obvious details needed to understand or work on that path. Avoid line-by-line narration and mandatory section templates.
+- Distinguish source-backed facts, runtime observations, and remaining inferences. Do not invent historical motivations to explain unusual code.
+- For this user's backend, database, or infrastructure questions, provide more context: explain the relevant guarantee, what can fail, and why the distinction matters, using a concrete example when helpful. Keep familiar frontend details concise.
+- Keep architectural critique separate and include it when requested. An explanation does not authorize refactoring or expanding into an architecture audit. Use the existing architecture-review workflow for a requested critique instead of automatically launching multiple critics.
+
 ## Bug fix
 
 1. Read and follow [Prove the Cause](../skills/principle-prove-the-cause/SKILL.md) for diagnosis, approval gates, correction, and causal verification.
