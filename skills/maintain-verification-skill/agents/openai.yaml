@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain Verification Skill"
+  short_description: "Keep affected verification flows accurate and tested"
+  default_prompt: "Use $maintain-verification-skill to update the affected repository verification flows and report what was actually checked."

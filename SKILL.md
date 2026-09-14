@@ -63,6 +63,8 @@ Do not pause for ordinary reversible implementation choices.
 
 Use a specialist only when its scope matches. Read its full `SKILL.md` before applying it.
 
+- Existing repository verification guidance affected by concrete changes or an explicit maintenance request. Read [maintain-verification-skill](skills/maintain-verification-skill/SKILL.md) to update and exercise the relevant flows without a default full audit.
+
 - Requested repository-specific verification guidance or a concrete recurring verification need. Read [create-verification-skill](skills/create-verification-skill/SKILL.md) to capture one important flow using existing tooling, without mapping the whole application.
 
 - Targeted impact reviews or changes to shared components, contracts, or behavior with concrete downstream effects. Read [blast-radius](skills/blast-radius/SKILL.md) to check safety assumptions beyond the diff without a repository-wide audit.
