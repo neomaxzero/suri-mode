@@ -127,6 +127,8 @@ Do not route to `karpathy-guidelines`, `human-gated-implementation`, `image-to-c
 
 ## Progress and replies
 
+For documentation, READMEs, design proposals, or authorized commit and PR descriptions, read [technical writing](references/technical-writing.md) for reader-focused organization and verifiable instructions.
+
 During daytime work, provide compact progress at meaningful points:
 
 - Discovery.
