@@ -1,46 +1,43 @@
 # Suri Mode
 
-Una skill para Codex que organiza trabajo técnico no trivial en cambios pequeños, verificables y ajustados al contexto.
+A Codex skill that organizes substantial technical work into small, verifiable changes suited to the task and repository.
 
-## Qué hace
+## What it does
 
-- Elige un flujo para investigación, bugs, features o refactors.
-- Pide decisiones humanas cuando cambian producto, arquitectura o alcance.
-- Usa especialistas solo cuando aportan valor real.
-- Verifica resultados desde la experiencia del usuario.
-- Incluye un `sleep mode` local que se activa únicamente de forma explícita.
+- Selects a workflow for investigations, bug fixes, features, or refactors.
+- Asks for human decisions when product behavior, architecture, or scope would change.
+- Uses specialist skills only when they add value.
+- Verifies outcomes through the real user experience.
+- Includes a local `sleep mode` that runs only when explicitly requested.
 
-## Instalación
+## Installation
 
 ```bash
 git clone https://github.com/neomaxzero/suri-mode.git ~/.codex/skills/suri-mode
 ```
 
-Reinicia Codex después de instalarla.
+Restart Codex after installation if the skill does not appear.
 
-## Uso
+## Usage
 
-La skill puede activarse automáticamente en tareas técnicas complejas. También puedes invocarla directamente:
+Codex can select this skill automatically for substantial technical tasks. You can also invoke it directly:
 
 ```text
-$suri-mode investigá este bug y proponé el cambio más pequeño que lo resuelva
+$suri-mode investigate this bug and propose the smallest change that fixes it
 ```
 
-`sleep mode` requiere esa frase exacta y una entrevista previa antes de modificar código.
+`sleep mode` requires that exact phrase and a short interview to agree on the objective and limits before changing code.
 
-## Estructura
+## Structure
 
 ```text
 suri-mode/
 ├── SKILL.md
 ├── agents/openai.yaml
-└── references/
-    ├── day-workflows.md
-    ├── decision-review.md
-    ├── sleep-mode.md
-    └── verification.md
+├── references/       # Workflows and verification guidance
+└── skills/           # Specialist skills
 ```
 
-## Licencia
+## License
 
 MIT
