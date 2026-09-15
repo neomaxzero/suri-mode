@@ -1,6 +1,6 @@
 interface:
   display_name: "Suri Mode"
-  short_description: "Orquesta trabajo pequeño y verificable"
-  default_prompt: "Usa $suri-mode para resolver esta tarea con el flujo adecuado."
+  short_description: "Organize technical work into verifiable changes"
+  default_prompt: "Use $suri-mode to choose a focused workflow for this technical task."
 policy:
   allow_implicit_invocation: true
