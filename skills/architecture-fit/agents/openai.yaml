@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Fit"
+  short_description: "Keep changes aligned with existing architecture"
+  default_prompt: "Use $architecture-fit to review whether this change fits the existing architecture."
